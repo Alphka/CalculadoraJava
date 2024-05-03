@@ -1,0 +1,16 @@
+<resources>
+	<string name="app_name" translatable="false">Calc</string>
+	<string name="app_title">Calculadora</string>
+	<string name="first_number">Primeiro número</string>
+	<string name="second_number">Segundo número</string>
+	<string name="sum">Somar</string>
+	<string name="subtract">Subtrair</string>
+	<string name="divide">Dividir</string>
+	<string name="multiply">Multiplicar</string>
+	<string name="calculate">Calcular</string>
+	<string name="result">Resultado</string>
+	<string name="invalid_first_number">Digite um valor válido</string>
+	<string name="invalid_second_number">Digite um valor válido</string>
+	<string name="no_options_checked">Nenhuma das opções foram marcadas</string>
+	<string name="cant_divide_by_zero">Nâo é possível dividir por zero</string>
+</resources>

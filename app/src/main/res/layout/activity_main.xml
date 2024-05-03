@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".MainActivity">
+
+	<TextView
+		android:id="@+id/titulo"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="24dp"
+		android:layout_marginStart="12dp"
+		android:layout_marginEnd="12dp"
+		android:textAlignment="center"
+		android:textSize="34sp"
+		android:text="@string/app_title"
+		android:textColor="?colorText"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		/>
+
+	<LinearLayout
+		android:id="@+id/inputs"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:minHeight="48dp"
+		android:layout_marginTop="8dp"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/titulo">
+		<EditText
+			android:id="@+id/numero1"
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:layout_height="match_parent"
+			android:layout_marginStart="12dp"
+			android:layout_marginEnd="12dp"
+			android:inputType="number|numberDecimal"
+			android:digits="0123456789"
+			android:hint="@string/first_number"
+			android:importantForAutofill="no"
+			/>
+
+		<EditText
+			android:id="@+id/numero2"
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:layout_height="match_parent"
+			android:layout_marginStart="12dp"
+			android:layout_marginEnd="12dp"
+			android:inputType="number|numberDecimal"
+			android:digits="0123456789"
+			android:hint="@string/second_number"
+			android:importantForAutofill="no"
+			/>
+	</LinearLayout>
+
+	<RadioGroup
+		android:id="@+id/radioGroup"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/inputs">
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="8dp">
+			<RadioButton
+				android:id="@+id/soma"
+				android:layout_width="0dp"
+				android:layout_weight="1"
+				android:layout_height="wrap_content"
+				android:text="@string/sum"
+				android:layout_marginStart="12dp"
+				android:layout_marginEnd="12dp"
+				/>
+
+			<RadioButton
+				android:id="@+id/subtracao"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="12dp"
+				android:layout_marginEnd="12dp"
+				android:layout_weight="1"
+				android:checked="false"
+				android:text="@string/subtract" />
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="8dp">
+			<RadioButton
+				android:id="@+id/divisao"
+				android:layout_width="0dp"
+				android:layout_weight="1"
+				android:layout_height="wrap_content"
+				android:text="@string/divide"
+				android:layout_marginStart="12dp"
+				android:layout_marginEnd="12dp"
+				/>
+
+			<RadioButton
+				android:id="@+id/multiplicacao"
+				android:layout_width="0dp"
+				android:layout_weight="1"
+				android:layout_height="wrap_content"
+				android:text="@string/multiply"
+				android:layout_marginStart="12dp"
+				android:layout_marginEnd="12dp"
+				/>
+		</LinearLayout>
+	</RadioGroup>
+
+	<Button
+		android:id="@+id/calcular"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="32dp"
+		android:text="@string/calculate"
+		android:textColor="@color/white"
+		app:backgroundTint="?buttonBackground"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+		/>
+
+	<TextView
+		android:id="@+id/resultadoLabel"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="20dp"
+		android:text="@string/result"
+		android:textSize="20sp"
+		android:textColor="?colorText"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/calcular"
+		/>
+
+	<TextView
+		android:id="@+id/resultado"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="8dp"
+		android:textSize="16sp"
+		android:textColor="?colorText"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/resultadoLabel"
+		/>
+</androidx.constraintlayout.widget.ConstraintLayout>
