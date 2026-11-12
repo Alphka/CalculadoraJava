@@ -1,8 +1,6 @@
-<h1 align="center">Calculadora</h1>
+[English](README.md) | **Português (Brasil)**
 
-<p align="center">
-	<a href="README.md">English</a> | Português (Brasil)
-</p>
+<h1 align="center">Calculadora</h1>
 
 ### Descrição
 
